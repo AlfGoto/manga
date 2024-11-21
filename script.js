@@ -1,5 +1,5 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
-const cors = "https://corsproxy.io/?"
+const cors = "https://alfpi.top/index.php?url="
 
 const supabase = createClient('https://ybnsbhhdtqytccpcegzq.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlibnNiaGhkdHF5dGNjcGNlZ3pxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIxOTk5MDAsImV4cCI6MjA0Nzc3NTkwMH0.RxiKoFjoSGmNGzSZ-MH41bG1-XhFT4bIxWYs2onQRxc')
 
