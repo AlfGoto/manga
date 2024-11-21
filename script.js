@@ -1,5 +1,5 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
-const cors = "https://alfpi.top/index.php?url="
+const cors = "https://minesweeper.fr/prox.php?url="
 
 const supabase = createClient('https://ybnsbhhdtqytccpcegzq.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlibnNiaGhkdHF5dGNjcGNlZ3pxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIxOTk5MDAsImV4cCI6MjA0Nzc3NTkwMH0.RxiKoFjoSGmNGzSZ-MH41bG1-XhFT4bIxWYs2onQRxc')
 
@@ -12,13 +12,13 @@ async function load() {
   for (const e of Liste) {
     await checkManga(e);
   }
-  toRead.forEach(c => materializeChapter(c))
 
   if (toRead.length == 0) {
     document.getElementById('toRead').innerHTML = "Nothing is updated"
   }
 
-  Liste.forEach(c => materializeListe(c))
+  // toRead.forEach(c => materializeChapter(c))
+  // Liste.forEach(c => materializeListe(c))
 }
 
 function materializeListe(c) {
@@ -134,7 +134,9 @@ async function checkManga(manga) {
   }
   if (arr.length > 0) {
     toRead.push({ manga: manga, chapters: arr })
+    materializeChapter({ manga: manga, chapters: arr })
   }
+  materializeListe(manga)
 }
 
 
@@ -160,6 +162,6 @@ document.getElementById('addMangaButton').onclick = async () => {
       },
     ])
 
-  location.reload()
-
+  // location.reload()
+  document.getElementById("inputManga").value = ""
 }
