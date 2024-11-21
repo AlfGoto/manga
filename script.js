@@ -7,7 +7,7 @@ const supabase = createClient('https://ybnsbhhdtqytccpcegzq.supabase.co', 'eyJhb
 let toRead = []
 load()
 async function load() {
-  let { data: Liste, error } = await supabase.from('Liste').select('*');
+  let { data: Liste, error } = await supabase.from('Liste').select('*').order('titre', { ascending: true });
 
   for (const e of Liste) {
     await checkManga(e);
@@ -24,7 +24,6 @@ async function load() {
 function materializeListe(c) {
   let div = document.createElement('div')
   div.classList.add('div1')
-  div.onclick = () => window.location.href = c.url
   document.getElementById('AlreadyRead').appendChild(div)
 
   let buttonDel = document.createElement('button')
@@ -32,13 +31,15 @@ function materializeListe(c) {
   buttonDel.classList.add('del')
   buttonDel.innerHTML = 'Del!'
   buttonDel.onclick = async () => {
-    if (confirm('Do you realy want to delete ' + c.manga.titre)) {
+    if (confirm('Do you realy want to delete ' + c.titre)) {
       const { error } = await supabase
         .from('Liste')
         .delete()
         .eq('id', c.id)
+      location.reload()
     }
   }
+  div.onclick = (e) => { if (e.target != buttonDel) window.open(c.url, '_blank').focus() }
 
   let img = document.createElement('img')
   div.appendChild(img)
@@ -59,7 +60,7 @@ function materializeChapter(c) {
   div.appendChild(title)
   title.classList.add('title')
   title.innerHTML = c.manga.titre
-  title.onclick = () => window.location.href = c.manga.url
+  title.onclick = () => window.open(c.manga.url, '_blank').focus()
 
   let div2 = document.createElement('div')
   div2.classList.add('div2')
@@ -88,12 +89,10 @@ function materializeChapter(c) {
   buttonDel.innerHTML = 'Del!'
   buttonDel.onclick = async () => {
     if (confirm('Do you realy want to delete ' + c.manga.titre)) {
-
       const { error } = await supabase
         .from('Liste')
         .delete()
         .eq('id', c.manga.id)
-
     }
   }
 
@@ -107,6 +106,7 @@ function materializeChapter(c) {
   div2.appendChild(chapters)
 
   c.chapters.forEach(cha => {
+    cha.target = '_blank'
     chapters.appendChild(cha)
     cha.onclick = async () => {
       const { data, error } = await supabase
@@ -114,6 +114,7 @@ function materializeChapter(c) {
         .update({ lastRead: cha.innerHTML })
         .eq('id', c.manga.id)
         .select()
+      location.reload()
     }
   })
 }
