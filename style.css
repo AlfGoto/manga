@@ -1,0 +1,108 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+
+
+body{
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#toRead{
+  width: 100%;
+
+  .div1{
+    background-color: rgb(231, 231, 231);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .title{
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    #buttonDiv{
+      display: flex;
+      gap: 5px;
+
+      button{
+        border: none;
+        width: fit-content;
+        padding: 10px;
+      }
+      .allRead{
+        background-color: rgb(165, 165, 255);
+      }
+      .del{
+        background-color: rgb(255, 73, 73);
+      }
+    }
+
+    .div2{
+      display: flex;
+      >img{
+        max-height: 200px;
+      }
+
+      .chapters{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        a{
+          background-color: lightgreen;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+#addManga{
+  input{
+    padding: 10px;
+    border: none;
+    background-color: rgb(233, 233, 233);
+  }
+  button{
+    background-color: lightgreen;
+    padding: 10px;
+    border: none;
+  }
+}
+
+#AlreadyRead{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .div1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .del{
+      background-color: rgb(255, 73, 73);
+      border: none;
+      width: fit-content;
+      padding: 5px;
+      height: 50px;
+    }
+
+    img{
+      max-height: 50px;
+    }
+  }
+}
