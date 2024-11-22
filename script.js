@@ -1,1 +1,166 @@
-const _0x5e41d0=_0x119b;(function(_0x4afee8,_0x3d5644){const _0x20f158=_0x119b,_0x1612af=_0x4afee8();while(!![]){try{const _0x10c53c=parseInt(_0x20f158(0xf4))/0x1+-parseInt(_0x20f158(0xd7))/0x2*(-parseInt(_0x20f158(0xcd))/0x3)+-parseInt(_0x20f158(0xda))/0x4+parseInt(_0x20f158(0xf2))/0x5+-parseInt(_0x20f158(0xd0))/0x6*(-parseInt(_0x20f158(0xe0))/0x7)+-parseInt(_0x20f158(0xef))/0x8*(-parseInt(_0x20f158(0xdb))/0x9)+-parseInt(_0x20f158(0xd3))/0xa;if(_0x10c53c===_0x3d5644)break;else _0x1612af['push'](_0x1612af['shift']());}catch(_0x32b80a){_0x1612af['push'](_0x1612af['shift']());}}}(_0x50d0,0x4d0a5));import{createClient}from'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';const cors='https://minesweeper.fr/prox.php?url=',supabase=createClient('https://ybnsbhhdtqytccpcegzq.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlibnNiaGhkdHF5dGNjcGNlZ3pxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIxOTk5MDAsImV4cCI6MjA0Nzc3NTkwMH0.RxiKoFjoSGmNGzSZ-MH41bG1-XhFT4bIxWYs2onQRxc');let toRead=[];function _0x50d0(){const _0x12adbc=['from','.story-info-right\x20h1','text','select','forEach','div1','value','toRead','insert','target','onclick','81483yXQtoV','_blank','div','18OMkhXQ','del','buttonDiv','2562950vylfyZ','chapters','chapter-name','url','20WJFGgs','addMangaButton','Nothing\x20is\x20updated','2414388aiIjyA','2504826RxgAoK','classList','All\x20Read','Del!','push','185395JXfVcc','text/html','order','inputManga','appendChild','src','length','Do\x20you\x20realy\x20want\x20to\x20delete\x20','reload','add','open','img','delete','AlreadyRead','title','8OAaaSg','createElement','update','2341160JrIesd','button','77838wROEjF','parseFromString','getElementsByClassName','Liste','titre','focus','innerHTML','manga','querySelector'];_0x50d0=function(){return _0x12adbc;};return _0x50d0();}load();async function load(){const _0x44e512=_0x119b;let {data:_0x1f95f3,error:_0x48230d}=await supabase[_0x44e512(0xfd)](_0x44e512(0xf7))[_0x44e512(0x100)]('*')[_0x44e512(0xe2)](_0x44e512(0xf8),{'ascending':!![]});for(const _0x551f1e of _0x1f95f3){await checkManga(_0x551f1e);}toRead[_0x44e512(0xe6)]==0x0&&(document['getElementById'](_0x44e512(0x104))[_0x44e512(0xfa)]=_0x44e512(0xd9));}function materializeListe(_0x12a3d4){const _0x3c819f=_0x119b;let _0x16c60d=document[_0x3c819f(0xf0)](_0x3c819f(0xcf));_0x16c60d[_0x3c819f(0xdc)][_0x3c819f(0xe9)](_0x3c819f(0x102)),document['getElementById'](_0x3c819f(0xed))['appendChild'](_0x16c60d);let _0x47e17d=document[_0x3c819f(0xf0)](_0x3c819f(0xf3));_0x16c60d['appendChild'](_0x47e17d),_0x47e17d[_0x3c819f(0xdc)][_0x3c819f(0xe9)](_0x3c819f(0xd1)),_0x47e17d[_0x3c819f(0xfa)]=_0x3c819f(0xde),_0x47e17d[_0x3c819f(0xcc)]=async()=>{const _0x4c587f=_0x3c819f;if(confirm(_0x4c587f(0xe7)+_0x12a3d4[_0x4c587f(0xf8)])){const {error:_0x1d4eaa}=await supabase[_0x4c587f(0xfd)](_0x4c587f(0xf7))[_0x4c587f(0xec)]()['eq']('id',_0x12a3d4['id']);location[_0x4c587f(0xe8)]();}},_0x16c60d['onclick']=_0xb3761=>{const _0x41d192=_0x3c819f;if(_0xb3761[_0x41d192(0xcb)]!=_0x47e17d)window[_0x41d192(0xea)](_0x12a3d4[_0x41d192(0xd6)],_0x41d192(0xce))['focus']();};let _0x2df251=document[_0x3c819f(0xf0)](_0x3c819f(0xeb));_0x16c60d[_0x3c819f(0xe4)](_0x2df251),_0x2df251[_0x3c819f(0xe5)]=_0x12a3d4[_0x3c819f(0xeb)];let _0x58c3bd=document[_0x3c819f(0xf0)]('p');_0x16c60d[_0x3c819f(0xe4)](_0x58c3bd),_0x58c3bd['classList'][_0x3c819f(0xe9)](_0x3c819f(0xee)),_0x58c3bd[_0x3c819f(0xfa)]=_0x12a3d4[_0x3c819f(0xf8)];}function materializeChapter(_0x566d9b){const _0x35bf6a=_0x119b;let _0x5bee05=document[_0x35bf6a(0xf0)]('div');_0x5bee05[_0x35bf6a(0xdc)][_0x35bf6a(0xe9)]('div1'),document['getElementById'](_0x35bf6a(0x104))[_0x35bf6a(0xe4)](_0x5bee05);let _0xdc119b=document[_0x35bf6a(0xf0)]('p');_0x5bee05[_0x35bf6a(0xe4)](_0xdc119b),_0xdc119b[_0x35bf6a(0xdc)][_0x35bf6a(0xe9)](_0x35bf6a(0xee)),_0xdc119b[_0x35bf6a(0xfa)]=_0x566d9b[_0x35bf6a(0xfb)]['titre'],_0xdc119b['onclick']=()=>window[_0x35bf6a(0xea)](_0x566d9b[_0x35bf6a(0xfb)][_0x35bf6a(0xd6)],_0x35bf6a(0xce))[_0x35bf6a(0xf9)]();let _0x55d60f=document[_0x35bf6a(0xf0)](_0x35bf6a(0xcf));_0x55d60f[_0x35bf6a(0xdc)][_0x35bf6a(0xe9)]('div2'),_0x5bee05['appendChild'](_0x55d60f);let _0x252620=document[_0x35bf6a(0xf0)](_0x35bf6a(0xd2));_0x252620['id']='buttonDiv',_0x5bee05[_0x35bf6a(0xe4)](_0x252620);let _0x216028=document['createElement']('button');_0x252620[_0x35bf6a(0xe4)](_0x216028),_0x216028['classList'][_0x35bf6a(0xe9)]('allRead'),_0x216028[_0x35bf6a(0xfa)]=_0x35bf6a(0xdd),_0x216028[_0x35bf6a(0xcc)]=async()=>{const _0x246de5=_0x35bf6a,{data:_0x33df95,error:_0x4b36d2}=await supabase['from']('Liste')['update']({'lastRead':_0x566d9b[_0x246de5(0xd4)][0x0][_0x246de5(0xfa)]})['eq']('id',_0x566d9b[_0x246de5(0xfb)]['id'])[_0x246de5(0x100)]();location[_0x246de5(0xe8)]();};let _0x5cd36d=document[_0x35bf6a(0xf0)](_0x35bf6a(0xf3));_0x252620['appendChild'](_0x5cd36d),_0x5cd36d[_0x35bf6a(0xdc)][_0x35bf6a(0xe9)](_0x35bf6a(0xd1)),_0x5cd36d['innerHTML']=_0x35bf6a(0xde),_0x5cd36d[_0x35bf6a(0xcc)]=async()=>{const _0x2cc9fb=_0x35bf6a;if(confirm(_0x2cc9fb(0xe7)+_0x566d9b[_0x2cc9fb(0xfb)][_0x2cc9fb(0xf8)])){const {error:_0x4d3c6c}=await supabase[_0x2cc9fb(0xfd)](_0x2cc9fb(0xf7))['delete']()['eq']('id',_0x566d9b[_0x2cc9fb(0xfb)]['id']);}};let _0x33d7d9=document[_0x35bf6a(0xf0)](_0x35bf6a(0xeb));_0x55d60f[_0x35bf6a(0xe4)](_0x33d7d9),_0x33d7d9[_0x35bf6a(0xe5)]=_0x566d9b[_0x35bf6a(0xfb)][_0x35bf6a(0xeb)];let _0x4fd483=document[_0x35bf6a(0xf0)](_0x35bf6a(0xcf));_0x4fd483[_0x35bf6a(0xdc)][_0x35bf6a(0xe9)]('chapters'),_0x55d60f['appendChild'](_0x4fd483),_0x566d9b[_0x35bf6a(0xd4)][_0x35bf6a(0x101)](_0x5e8f86=>{const _0x49bbe4=_0x35bf6a;_0x5e8f86['target']=_0x49bbe4(0xce),_0x4fd483['appendChild'](_0x5e8f86),_0x5e8f86[_0x49bbe4(0xcc)]=async()=>{const _0x8426c9=_0x49bbe4,{data:_0x5cf49e,error:_0x37f612}=await supabase[_0x8426c9(0xfd)](_0x8426c9(0xf7))[_0x8426c9(0xf1)]({'lastRead':_0x5e8f86[_0x8426c9(0xfa)]})['eq']('id',_0x566d9b['manga']['id'])['select']();location[_0x8426c9(0xe8)]();};});}function _0x119b(_0x4cf17f,_0x52b468){const _0x50d035=_0x50d0();return _0x119b=function(_0x119b97,_0x2e8f14){_0x119b97=_0x119b97-0xca;let _0x9d24e2=_0x50d035[_0x119b97];return _0x9d24e2;},_0x119b(_0x4cf17f,_0x52b468);}async function checkManga(_0x23c378){const _0xb261df=_0x119b,_0x1ede4b=await fetch(cors+_0x23c378[_0xb261df(0xd6)]),_0x118f07=await _0x1ede4b[_0xb261df(0xff)](),_0x5a5d3b=new DOMParser(),_0x4c18d2=_0x5a5d3b[_0xb261df(0xf5)](_0x118f07,_0xb261df(0xe1)),_0x2c0afd=Array[_0xb261df(0xfd)](_0x4c18d2[_0xb261df(0xf6)](_0xb261df(0xd5)));let _0x433eba=[];for(let _0x3993e6=0x0;_0x3993e6<_0x2c0afd['length'];_0x3993e6++){let _0x13599a=_0x2c0afd[_0x3993e6];if(_0x13599a[_0xb261df(0xfa)]===_0x23c378['lastRead'])break;_0x433eba['push'](_0x13599a);}_0x433eba[_0xb261df(0xe6)]>0x0&&(toRead[_0xb261df(0xdf)]({'manga':_0x23c378,'chapters':_0x433eba}),materializeChapter({'manga':_0x23c378,'chapters':_0x433eba})),materializeListe(_0x23c378);}document['getElementById'](_0x5e41d0(0xd8))[_0x5e41d0(0xcc)]=async()=>{const _0x245725=_0x5e41d0,_0x5a9fc7=document['getElementById']('inputManga')['value'],_0x1f1724=await fetch(cors+_0x5a9fc7),_0x5c7daa=await _0x1f1724[_0x245725(0xff)](),_0x51de70=new DOMParser(),_0x26cdd4=_0x51de70[_0x245725(0xf5)](_0x5c7daa,'text/html'),_0x5f07f8=_0x26cdd4[_0x245725(0xfc)](_0x245725(0xfe))['innerHTML'],_0x4a9a06=_0x26cdd4[_0x245725(0xfc)]('.info-image\x20img')[_0x245725(0xe5)],_0x2c8233=Array['from'](_0x26cdd4[_0x245725(0xf6)]('chapter-name'))[0x0]['innerHTML'];await supabase[_0x245725(0xfd)](_0x245725(0xf7))[_0x245725(0xca)]([{'url':_0x5a9fc7,'titre':_0x5f07f8,'lastRead':_0x2c8233,'img':_0x4a9a06}]),document['getElementById'](_0x245725(0xe3))[_0x245725(0x103)]='';};
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm'
+const cors = "https://minesweeper.fr/prox.php?url="
+
+const supabase = createClient('https://ybnsbhhdtqytccpcegzq.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InlibnNiaGhkdHF5dGNjcGNlZ3pxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzIxOTk5MDAsImV4cCI6MjA0Nzc3NTkwMH0.RxiKoFjoSGmNGzSZ-MH41bG1-XhFT4bIxWYs2onQRxc')
+
+
+let toRead = []
+load()
+async function load() {
+  let { data: Liste, error } = await supabase.from('Liste').select('*').order('titre', { ascending: true });
+
+  for (const e of Liste) {
+    await checkManga(e);
+  }
+
+  if (toRead.length == 0) {
+    document.getElementById('toRead').innerHTML = "Nothing is updated"
+  }
+
+  // toRead.forEach(c => materializeChapter(c))
+  // Liste.forEach(c => materializeListe(c))
+}
+
+function materializeListe(c) {
+  let div = document.createElement('div')
+  div.classList.add('div1')
+  document.getElementById('AlreadyRead').appendChild(div)
+
+  let buttonDel = document.createElement('button')
+  div.appendChild(buttonDel)
+  buttonDel.classList.add('del')
+  buttonDel.innerHTML = 'Del!'
+  buttonDel.onclick = async () => {
+    if (confirm('Do you realy want to delete ' + c.titre)) {
+      const { error } = await supabase
+        .from('Liste')
+        .delete()
+        .eq('id', c.id)
+      location.reload()
+    }
+  }
+  div.onclick = (e) => { if (e.target != buttonDel) window.open(c.url, '_blank').focus() }
+
+  let img = document.createElement('img')
+  div.appendChild(img)
+  img.src = c.img
+
+  let title = document.createElement('p')
+  div.appendChild(title)
+  title.classList.add('title')
+  title.innerHTML = c.titre
+}
+
+function materializeChapter(c) {
+  let div = document.createElement('div')
+  div.classList.add('div1')
+  document.getElementById('toRead').appendChild(div)
+
+  let title = document.createElement('p')
+  div.appendChild(title)
+  title.classList.add('title')
+  title.innerHTML = c.manga.titre
+  title.onclick = () => window.open(c.manga.url, '_blank').focus()
+
+  let div2 = document.createElement('div')
+  div2.classList.add('div2')
+  div.appendChild(div2)
+
+  let buttonDiv = document.createElement('buttonDiv')
+  buttonDiv.id = "buttonDiv"
+  div.appendChild(buttonDiv)
+
+  let button = document.createElement('button')
+  buttonDiv.appendChild(button)
+  button.classList.add('allRead')
+  button.innerHTML = "All Read"
+  button.onclick = async () => {
+    const { data, error } = await supabase
+      .from('Liste')
+      .update({ lastRead: c.chapters[0].innerHTML })
+      .eq('id', c.manga.id)
+      .select()
+    location.reload()
+  }
+
+  let buttonDel = document.createElement('button')
+  buttonDiv.appendChild(buttonDel)
+  buttonDel.classList.add('del')
+  buttonDel.innerHTML = 'Del!'
+  buttonDel.onclick = async () => {
+    if (confirm('Do you realy want to delete ' + c.manga.titre)) {
+      const { error } = await supabase
+        .from('Liste')
+        .delete()
+        .eq('id', c.manga.id)
+    }
+  }
+
+
+  let img = document.createElement('img')
+  div2.appendChild(img)
+  img.src = c.manga.img
+
+  let chapters = document.createElement('div')
+  chapters.classList.add('chapters')
+  div2.appendChild(chapters)
+
+  c.chapters.forEach(cha => {
+    cha.target = '_blank'
+    chapters.appendChild(cha)
+    cha.onclick = async () => {
+      const { data, error } = await supabase
+        .from('Liste')
+        .update({ lastRead: cha.innerHTML })
+        .eq('id', c.manga.id)
+        .select()
+      location.reload()
+    }
+  })
+}
+
+async function checkManga(manga) {
+  const f = await fetch(cors + manga.url);
+  const html = await f.text();
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
+  const domChapters = Array.from(doc.getElementsByClassName("chapter-name"));
+
+  let arr = []
+  for (let i = 0; i < domChapters.length; i++) {
+    let c = domChapters[i];
+    if (c.innerHTML === manga.lastRead) break;
+    arr.push(c);
+  }
+  if (arr.length > 0) {
+    toRead.push({ manga: manga, chapters: arr })
+    materializeChapter({ manga: manga, chapters: arr })
+  }
+  materializeListe(manga)
+}
+
+
+document.getElementById('addMangaButton').onclick = async () => {
+  const url = document.getElementById("inputManga").value
+  const f = await fetch(cors + url);
+  const html = await f.text();
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(html, 'text/html');
+  const title = doc.querySelector(".story-info-right h1").innerHTML
+  const img = doc.querySelector(".info-image img").src
+  const last = Array.from(doc.getElementsByClassName("chapter-name"))[0].innerHTML;
+
+  await supabase
+    .from('Liste')
+    .insert([
+      {
+        url: url,
+        titre: title,
+        lastRead: last,
+        img: img
+      },
+    ])
+
+  // location.reload()
+  document.getElementById("inputManga").value = ""
+}
