@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -7,9 +7,7 @@
   text-decoration: none;
 }
 
-
-
-body{
+body {
   width: 100%;
   padding: 5px;
   display: flex;
@@ -17,83 +15,114 @@ body{
   gap: 20px;
 }
 
-#toRead{
+#toRead {
   width: 100%;
 
-  .div1{
+  .div1 {
     background-color: rgb(231, 231, 231);
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 5px;
 
-    .title{
+    .title {
       font-size: 25px;
       cursor: pointer;
     }
 
-    #buttonDiv{
+    #buttonDiv {
       display: flex;
       gap: 5px;
 
-      button{
+      button {
         border: none;
         width: fit-content;
         padding: 10px;
       }
-      .allRead{
+
+      .allRead {
         background-color: rgb(165, 165, 255);
       }
-      .del{
+
+      .del {
         background-color: rgb(255, 73, 73);
       }
     }
 
-    .div2{
+    .div2 {
       display: flex;
-      >img{
+
+      > img {
         max-height: 200px;
       }
 
-      .chapters{
+      .chapters {
         padding: 10px;
         display: flex;
         flex-direction: column;
         gap: 5px;
 
-        a{
+        a {
           background-color: lightgreen;
           padding: 10px;
         }
       }
     }
   }
+
+  progress {
+    height: 40px;
+    border-radius: 0;
+    background-color: transparent;
+    border: solid 1px black;
+
+    &[value] {
+      -webkit-appearance: none;
+      appearance: none;
+      border-radius: 0;
+      background-color: transparent;
+    }
+    &::-webkit-progress-bar {
+      background-color: #f3f3f3;
+      border-radius: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    &::-webkit-progress-value {
+      background: linear-gradient(90deg, #36b23a, #9ae19e);
+      border-radius: 0;
+    }
+    &::-moz-progress-bar {
+      background: linear-gradient(90deg, #36b23a, #9ae19e);
+      border-radius: 0;
+    }
+  }
 }
 
-#addManga{
-  input{
+#addManga {
+  input {
     padding: 10px;
     border: none;
     background-color: rgb(233, 233, 233);
   }
-  button{
+
+  button {
     background-color: lightgreen;
     padding: 10px;
     border: none;
   }
 }
 
-#AlreadyRead{
+#AlreadyRead {
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-  .div1{
+  .div1 {
     display: flex;
     align-items: center;
     gap: 5px;
 
-    .del{
+    .del {
       background-color: rgb(255, 73, 73);
       border: none;
       width: fit-content;
@@ -101,7 +130,7 @@ body{
       height: 50px;
     }
 
-    img{
+    img {
       max-height: 50px;
     }
   }
